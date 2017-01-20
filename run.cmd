@@ -1,0 +1,1 @@
+mvn clean install & (ping 127.0.0.1 -n 6 > nul & start http://localhost:8081/stackoverflow.html & start http://localhost:8081/api/ntc-4) | java -Dfile.encoding=UTF-8 -jar target/springboot-1.0-SNAPSHOT.jar
