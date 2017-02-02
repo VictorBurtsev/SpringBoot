@@ -1,7 +1,7 @@
-package de.springboot.service;
+package com.herokuapp.springboot.service;
 
-import de.springboot.model.StackoverflowWebsite;
-import de.springboot.persistence.StackoverflowWebsiteRepository;
+import com.herokuapp.springboot.model.StackoverflowWebsite;
+import com.herokuapp.springboot.persistence.StackoverflowWebsiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package de.springboot.service;
+package com.herokuapp.springboot.service;
 
-import de.springboot.model.SiteDto;
-import de.springboot.model.SitesDto;
+import com.herokuapp.springboot.model.SiteDto;
+import com.herokuapp.springboot.model.SitesDto;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.http.client.ClientHttpRequestFactory;

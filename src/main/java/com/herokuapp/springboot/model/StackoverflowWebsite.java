@@ -1,4 +1,4 @@
-package de.springboot.model;
+package com.herokuapp.springboot.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

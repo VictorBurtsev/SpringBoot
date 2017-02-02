@@ -1,6 +1,6 @@
-package de.springboot.persistence;
+package com.herokuapp.springboot.persistence;
 
-import de.springboot.model.StackoverflowWebsite;
+import com.herokuapp.springboot.model.StackoverflowWebsite;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

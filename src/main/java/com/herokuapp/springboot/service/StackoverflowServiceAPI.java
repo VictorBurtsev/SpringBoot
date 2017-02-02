@@ -1,14 +1,13 @@
-package de.springboot.service;
+package com.herokuapp.springboot.service;
 
 import com.google.common.collect.ImmutableList;
-import de.springboot.model.SiteDto;
-import de.springboot.model.StackoverflowWebsite;
+import com.herokuapp.springboot.model.SiteDto;
+import com.herokuapp.springboot.model.StackoverflowWebsite;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.toList;

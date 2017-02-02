@@ -1,7 +1,7 @@
-package de.springboot.web;
+package com.herokuapp.springboot.web;
 
-import de.springboot.model.StackoverflowWebsite;
-import de.springboot.service.StackoverflowService;
+import com.herokuapp.springboot.model.StackoverflowWebsite;
+import com.herokuapp.springboot.service.StackoverflowService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
