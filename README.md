@@ -1,6 +1,6 @@
 ## Synopsis
 
-*Simple Java web application based on SpringBoot (IoC, Data, Rest), AngularJS.*
+*Simple Java web application based on Spring(Boot, IoC, Data, Rest), AngularJS.*
 
 ## Installation
 
@@ -20,8 +20,8 @@ Test environment:
 
 Create database:
 
-* move in \SpringBoot\src\main\resources\database folder
-* mongo springDemo SpringDemo.js
+* move in \SpringBoot\src\main\resources\database\
+* mongo "SpringBoot" SpringBoot.js
 
 Downloading source:
 
