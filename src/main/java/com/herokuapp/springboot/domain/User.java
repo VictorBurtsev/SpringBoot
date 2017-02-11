@@ -24,7 +24,7 @@ public class User implements UserDetails {
     private ObjectId id;
     @Indexed(unique = true)
     private String username;
-    private List<GrantedAuthority> authorities;
+    private List<Role> authorities;
     private String password;
     private boolean accountNonExpired;
     private boolean accountNonLocked;
