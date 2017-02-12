@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -20,6 +21,11 @@ public class UserService implements UserDetailsService {
 
     @PostConstruct
     public void init() {
+        userDao.findByUsername("user").ifPresent(user -> {
+            user.setPassword(new BCryptPasswordEncoder().encode("password"));
+            userDao.save(user);
+        });
+
         if (!userDao.findByUsername("user").isPresent()) {
             userDao.save(User.builder()
                     .username("user")
