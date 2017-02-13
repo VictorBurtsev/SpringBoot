@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/readme.txt", "/css/*").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().permitAll()
+                .formLogin().loginPage("/login").permitAll()
                 .and()
                 .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).permitAll();
     }
