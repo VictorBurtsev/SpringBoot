@@ -18,9 +18,6 @@
                     <h3 class="panel-title text-center">Login</h3>
                 </div>
                 <div class="panel-body">
-                <#if logout>
-                    <div class="alert alert-info text-center" role="alert">You've been logged out successfully.</div>
-                </#if>
                     <form method="post">
                         <div class="form-group">
                             <input type="text" class="form-control" id="username" placeholder="Username" name="username">
@@ -28,6 +25,9 @@
                         <div class="form-group">
                             <input type="password" class="form-control" id="password" placeholder="Password" name="password">
                         </div>
+                            <#if logout>
+                                <div class="alert alert-info text-center" role="alert">You've been logged out successfully.</div>
+                            </#if>
                             <#if error>
                                 <div class="alert alert-danger text-center" role="alert">Invalid Username or Password!</div>
                             </#if>
